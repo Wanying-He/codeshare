@@ -1,0 +1,20 @@
+git clone #URL
+
+# move this repo to a new folder 
+cd #new-directory
+
+git remote -v
+git remote add upstream #original repo URL
+
+# get upstream info??
+git fetch upstream
+
+# check if our branch is up to date with "origin/master"
+git checkout master
+
+# merge changes from the upstream to our local branches
+git merge upstream/master 
+
+# commit a change to your repository
+git commit -m "Add docstrings"
+
